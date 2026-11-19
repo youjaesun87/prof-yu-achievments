@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>유교수의 연구생활</title>
+<style>
+:root{--navy:#1b2a4a;--navy2:#2c4170;--accent:#3b82c4;--bg:#f4f5f8;--card:#fff;--line:#e2e5ec;--text:#1c2333;--muted:#6b7385;--ok:#1f9d63;--warn:#d9822b;--bad:#c9413b}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Noto Sans KR","Malgun Gothic",sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.5;-webkit-text-size-adjust:100%}
+header{background:var(--navy);color:#fff;padding:18px 16px 0;position:sticky;top:0;z-index:5}
+.hd{display:flex;align-items:center;justify-content:space-between;gap:8px;max-width:1080px;margin:0 auto}
+h1{font-size:19px;margin:0;font-weight:700;letter-spacing:-.3px}
+.hd small{display:block;font-size:11px;color:#9fb3d6;font-weight:400;margin-top:2px}
+.tools button{background:rgba(255,255,255,.12);color:#fff;border:0;border-radius:8px;padding:7px 10px;font-size:12px;cursor:pointer}
+.tabs{display:flex;gap:2px;overflow-x:auto;max-width:1080px;margin:14px auto 0;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tabs button{flex:0 0 auto;background:none;border:0;color:#b9c6df;padding:10px 12px;font-size:14px;font-weight:600;border-bottom:3px solid transparent;cursor:pointer;white-space:nowrap}
+.tabs button.on{color:#fff;border-bottom-color:#7cc0f5}
+.sub{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:4}
+.sub .tabs{margin:0 auto;padding:0 8px}
+.sub .tabs button{color:var(--muted);font-size:13.5px;padding:11px 10px}
+.sub .tabs button.on{color:var(--navy);border-bottom-color:var(--accent)}
+main{max-width:1080px;margin:0 auto;padding:16px 14px 80px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:14px}
+.card h2{font-size:16px;margin:0 0 4px}
+.card .desc{color:var(--muted);font-size:12.5px;margin:0 0 12px}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.sp{justify-content:space-between}
+.btn{background:var(--navy);color:#fff;border:0;border-radius:10px;padding:10px 14px;font-size:14px;font-weight:600;cursor:pointer}
+.btn.ghost{background:#eef1f6;color:var(--navy)}
+.btn.sm{padding:6px 10px;font-size:12.5px;border-radius:8px}
+.btn.del{background:#fbeceb;color:var(--bad)}
+input,select,textarea{font:inherit;color:inherit;border:1px solid #cfd4de;border-radius:9px;padding:9px 10px;background:#fff;width:100%}
+textarea{min-height:90px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:2px solid #a9cdee;border-color:var(--accent)}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{padding:9px 8px;text-align:right;border-bottom:1px solid var(--line);white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+th{font-size:12px;color:var(--muted);font-weight:600}
+td.tot,th.tot{font-weight:700;color:var(--navy)}
+tfoot td{font-weight:700;background:#f7f9fc;border-bottom:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.item{background:#fff;border:1px solid var(--line);border-radius:12px;padding:13px 14px}
+.item h3{margin:0 0 6px;font-size:15px}
+.item dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:3px 10px;font-size:13px}
+.item dt{color:var(--muted)}
+.item dd{margin:0;white-space:pre-wrap;word-break:break-word}
+.item .acts{margin-top:10px;display:flex;gap:6px;justify-content:flex-end}
+.badge{display:inline-block;font-size:11.5px;font-weight:700;padding:2px 8px;border-radius:99px;background:#e8f1fb;color:#235a94}
+.b-연구{background:#e8f1fb;color:#235a94}.b-봉사{background:#e6f6ee;color:#17734a}.b-산학{background:#fdf1e2;color:#9a5a12}.b-교육{background:#f1eafb;color:#5e3aa0}
+.ach{display:flex;gap:10px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--line)}
+.ach:last-child{border-bottom:0}
+.ach .t{flex:1;min-width:0}
+.ach .t b{display:block;font-weight:600;word-break:break-word}
+.ach .t span{font-size:12px;color:var(--muted)}
+.ach .s{font-weight:700;color:var(--navy);white-space:nowrap}
+.prog{margin:12px 0}
+.prog .lab{display:flex;justify-content:space-between;font-size:13px;margin-bottom:4px;gap:8px}
+.prog .lab b{font-weight:600}
+.bar{height:9px;background:#e7eaf1;border-radius:99px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent);border-radius:99px}
+.bar i.done{background:var(--ok)}
+.st{font-size:12px;font-weight:700}
+.st.ok{color:var(--ok)}.st.no{color:var(--warn)}.st.na{color:var(--muted);font-weight:500}
+.req{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin-top:10px}
+.req label,.f label{font-size:12px;color:var(--muted);display:block;margin-bottom:3px}
+.empty{text-align:center;color:var(--muted);padding:34px 10px;font-size:14px}
+.note{font-size:12px;color:var(--muted);background:#fff8e8;border:1px solid #f1e2b8;border-radius:10px;padding:9px 11px;margin-bottom:12px}
+dialog{border:0;border-radius:16px;padding:0;width:min(520px,94vw);max-height:90vh}
+dialog::backdrop{background:rgba(15,22,40,.5)}
+dialog form{padding:18px;display:flex;flex-direction:column;gap:11px}
+dialog h2{margin:0 0 2px;font-size:17px}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.big{font-size:26px;font-weight:800;color:var(--navy);letter-spacing:-.5px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:8px;margin-bottom:6px}
+.kpi{background:#f7f9fc;border-radius:10px;padding:10px 12px}
+.kpi span{font-size:12px;color:var(--muted);display:block}
+.kpi b{font-size:19px;color:var(--navy)}
+</style>
+</head>
+<body>
+<header>
+  <div class="hd">
+    <h1>유교수의 연구생활<small>업적 점수 · 학과 운영 관리</small></h1>
+    <div class="tools row">
+      <button id="exp">백업</button>
+      <button id="imp">복원</button>
+      <input type="file" id="impf" accept="application/json,.json" hidden>
+    </div>
+  </div>
+  <nav class="tabs" id="top"></nav>
+</header>
+<div class="sub" id="subwrap" hidden><nav class="tabs" id="sub"></nav></div>
+<main id="main"></main>
+<dialog id="dlg"><form id="frm" method="dialog"></form></dialog>
+
+<script>
+(function(){
+'use strict';
+var KEY='yuprof-v1';
+var CATS=['연구','봉사','산학','교육'];
+var CATKEY={'연구':'research','봉사':'service','산학':'industry','교육':'edu'};
+
+var SCHEMAS={
+  courses:{name:'교과목',fields:[
+    {k:'name',l:'교과목명',req:1},
+    {k:'year',l:'학년도',t:'number'},
+    {k:'term',l:'학기',t:'select',o:['1학기','2학기','여름계절','겨울계절']},
+    {k:'grade',l:'대상 학년',t:'select',o:['1학년','2학년','3학년','4학년','공통']},
+    {k:'type',l:'이수구분',t:'select',o:['전공필수','전공선택','교양','기타']},
+    {k:'credit',l:'학점',t:'number'},
+    {k:'hours',l:'주당 시수',t:'number'},
+    {k:'prof',l:'담당교수'},
+    {k:'memo',l:'비고',t:'textarea'}]},
+  syllabus:{name:'수업계획서',fields:[
+    {k:'name',l:'교과목명',req:1},
+    {k:'year',l:'학년도',t:'number'},
+    {k:'term',l:'학기',t:'select',o:['1학기','2학기','여름계절','겨울계절']},
+    {k:'goal',l:'수업목표',t:'textarea'},
+    {k:'plan',l:'주차별 계획',t:'textarea'},
+    {k:'eval',l:'평가방법',t:'textarea'},
+    {k:'book',l:'교재·자료'},
+    {k:'link',l:'파일 링크'}]},
+  capstone:{name:'캡스톤디자인',fields:[
+    {k:'name',l:'프로젝트명',req:1},
+    {k:'year',l:'학년도',t:'number'},
+    {k:'term',l:'학기',t:'select',o:['1학기','2학기']},
+    {k:'team',l:'팀명·참여학생'},
+    {k:'partner',l:'협력기업'},
+    {k:'status',l:'진행상태',t:'select',o:['기획','진행중','완료','보류']},
+    {k:'result',l:'결과물·성과',t:'textarea'},
+    {k:'memo',l:'비고',t:'textarea'}]},
+  extra:{name:'비교과프로그램',fields:[
+    {k:'name',l:'프로그램명',req:1},
+    {k:'kind',l:'유형',t:'select',o:['인턴십','현장실습','특강','워크숍','공연·행사','기타']},
+    {k:'org',l:'기관·기업'},
+    {k:'from',l:'시작일',t:'date'},
+    {k:'to',l:'종료일',t:'date'},
+    {k:'count',l:'참여인원',t:'number'},
+    {k:'who',l:'참여학생'},
+    {k:'memo',l:'내용·성과',t:'textarea'}]},
+  partners:{name:'산학협력',fields:[
+    {k:'name',l:'회사명',req:1},
+    {k:'field',l:'분야'},
+    {k:'person',l:'담당자'},
+    {k:'contact',l:'연락처'},
+    {k:'date',l:'협약일',t:'date'},
+    {k:'status',l:'상태',t:'select',o:['협의중','협약체결','협력진행','종료']},
+    {k:'memo',l:'협력내용',t:'textarea'}]},
+  counsel:{name:'학생상담',local:1,fields:[
+    {k:'name',l:'학생명',req:1},
+    {k:'sid',l:'학번'},
+    {k:'date',l:'상담일',t:'date'},
+    {k:'kind',l:'상담유형',t:'select',o:['학업','진로·취업','생활','휴·복학','기타']},
+    {k:'memo',l:'상담내용',t:'textarea'},
+    {k:'next',l:'후속조치',t:'textarea'}]}
+};
+
+var DEPTS=[
+  {id:'ent',name:'엔터비즈니스학과',tabs:[['courses','교과목관리'],['capstone','캡스톤디자인'],['extra','비교과프로그램(인턴십)'],['partners','산학협력회사'],['counsel','학생상담목록']]},
+  {id:'aim',name:'AI뮤직콘텐츠학과',tabs:[['courses','교과목관리'],['syllabus','수업계획서']]},
+  {id:'kma',name:'K뮤직아트학과',tabs:[['courses','교과목관리'],['syllabus','수업계획서'],['extra','비교과프로그램'],['partners','산학협력'],['counsel','학생상담']]}
+];
+
+var S=load();
+var cur={top:'ach',sub:{},q:'',yr:''};
+var $=function(id){return document.getElementById(id)};
+
+function blank(){return {ach:[],req:{research:'',service:'',industry:'',edu:'',total:'',from:'',to:''},data:{}}}
+function load(){
+  try{var r=localStorage.getItem(KEY);if(r){var o=JSON.parse(r);var b=blank();
+    return {ach:Array.isArray(o.ach)?o.ach:[],req:Object.assign(b.req,o.req||{}),data:o.data||{}}}}catch(e){}
+  return blank();
+}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){alert('저장에 실패했습니다. 브라우저 저장 공간을 확인해 주세요.')}}
+function esc(v){return String(v==null?'':v).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+function uid(){return Date.now().toString(36)+Math.random().toString(36).slice(2,7)}
+function num(v){var n=parseFloat(v);return isFinite(n)?n:0}
+function fmt(n){return (Math.round(n*100)/100).toLocaleString('ko-KR')}
+
+/* ---------- navigation ---------- */
+function renderTop(){
+  var h='<button data-t="ach" class="'+(cur.top==='ach'?'on':'')+'">업적 관리</button>';
+  DEPTS.forEach(function(d){h+='<button data-t="'+d.id+'" class="'+(cur.top===d.id?'on':'')+'">'+esc(d.name)+'</button>'});
+  $('top').innerHTML=h;
+}
+function dept(){for(var i=0;i<DEPTS.length;i++)if(DEPTS[i].id===cur.top)return DEPTS[i];return null}
+function subKey(){var d=dept();return cur.sub[d.id]||d.tabs[0][0]}
+function renderSub(){
+  var d=dept();
+  if(!d){$('subwrap').hidden=true;return}
+  $('subwrap').hidden=false;
+  var sk=subKey();
+  $('sub').innerHTML=d.tabs.map(function(t){return '<button data-s="'+t[0]+'" class="'+(t[0]===sk?'on':'')+'">'+esc(t[1])+'</button>'}).join('');
+}
+function render(){renderTop();renderSub();if(cur.top==='ach')renderAch();else renderList();}
+
+$('top').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;cur.top=b.dataset.t;cur.q='';render();window.scrollTo(0,0)});
+$('sub').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;cur.sub[cur.top]=b.dataset.s;cur.q='';render()});
+
+/* ---------- achievements ---------- */
+function sums(list){
+  var o={연구:0,봉사:0,산학:0,교육:0,총점:0};
+  list.forEach(function(a){if(o[a.cat]!=null){o[a.cat]+=num(a.score);o.총점+=num(a.score)}});
+  return o;
+}
+function renderAch(){
+  var years=[];S.ach.forEach(function(a){if(years.indexOf(String(a.year))<0)years.push(String(a.year))});
+  years.sort(function(a,b){return b-a});
+  var all=sums(S.ach);
+
+  // 연도별 요약
+  var h='<div class="card"><div class="row sp"><div><h2>연도별 업적 점수</h2><p class="desc">항목을 추가하면 연도별·영역별로 자동 합산됩니다.</p></div>'+
+        '<button class="btn" data-a="add-ach">+ 업적 추가</button></div>';
+  if(!years.length){h+='<div class="empty">아직 입력된 업적이 없습니다.<br>「+ 업적 추가」로 시작하세요.</div>'}
+  else{
+    h+='<div class="tw"><table><thead><tr><th>연도</th><th>연구</th><th>봉사</th><th>산학</th><th>교육</th><th class="tot">총점</th></tr></thead><tbody>';
+    years.forEach(function(y){var s=sums(S.ach.filter(function(a){return String(a.year)===y}));
+      h+='<tr><td>'+esc(y)+'</td><td>'+fmt(s.연구)+'</td><td>'+fmt(s.봉사)+'</td><td>'+fmt(s.산학)+'</td><td>'+fmt(s.교육)+'</td><td class="tot">'+fmt(s.총점)+'</td></tr>'});
+    h+='</tbody><tfoot><tr><td>누계</td><td>'+fmt(all.연구)+'</td><td>'+fmt(all.봉사)+'</td><td>'+fmt(all.산학)+'</td><td>'+fmt(all.교육)+'</td><td class="tot">'+fmt(all.총점)+'</td></tr></tfoot></table></div>';
+  }
+  h+='</div>';
+
+  // 승진 요건
+  var r=S.req;
+  var inR=S.ach.filter(function(a){var y=num(a.year);return (!r.from||y>=num(r.from))&&(!r.to||y<=num(r.to))});
+  var ps=sums(inR);
+  h+='<div class="card"><h2>부교수 → 정교수 승진 요건</h2><p class="desc">학교 규정의 필요 점수를 직접 입력하세요. 산정기간을 비우면 전체 연도를 합산합니다.</p>';
+  h+='<div class="req">'+
+     '<div><label>산정 시작 연도</label><input type="number" inputmode="numeric" data-r="from" value="'+esc(r.from)+'" placeholder="예: 2022"></div>'+
+     '<div><label>산정 종료 연도</label><input type="number" inputmode="numeric" data-r="to" value="'+esc(r.to)+'" placeholder="예: 2027"></div></div>';
+  h+='<div class="req">';
+  CATS.forEach(function(c){h+='<div><label>'+c+' 필요 점수</label><input type="number" inputmode="decimal" step="any" data-r="'+CATKEY[c]+'" value="'+esc(r[CATKEY[c]])+'" placeholder="0"></div>'});
+  h+='<div><label>총점 필요 점수</label><input type="number" inputmode="decimal" step="any" data-r="total" value="'+esc(r.total)+'" placeholder="0"></div></div>';
+  h+='<div id="prog">'+progHTML(ps)+'</div></div>';
+
+  // 항목 목록
+  h+='<div class="card"><div class="row sp"><h2>업적 항목</h2><select id="yr" style="width:auto"><option value="">전체 연도</option>'+
+     years.map(function(y){return '<option'+(cur.yr===y?' selected':'')+'>'+esc(y)+'</option>'}).join('')+'</select></div>';
+  var list=S.ach.filter(function(a){return !cur.yr||String(a.year)===cur.yr}).slice().sort(function(a,b){return b.year-a.year||CATS.indexOf(a.cat)-CATS.indexOf(b.cat)});
+  if(!list.length)h+='<div class="empty">표시할 항목이 없습니다.</div>';
+  list.forEach(function(a){
+    h+='<div class="ach"><span class="badge b-'+esc(a.cat)+'">'+esc(a.cat)+'</span><div class="t"><b>'+esc(a.title||'(내용 없음)')+'</b><span>'+esc(a.year)+'년'+(a.memo?' · '+esc(a.memo):'')+'</span></div>'+
+       '<div class="s">'+fmt(num(a.score))+'점</div><button class="btn ghost sm" data-a="edit-ach" data-id="'+a.id+'">수정</button></div>'});
+  h+='</div>';
+  $('main').innerHTML=h;
+}
+function progHTML(ps){
+  var r=S.req,h='';
+  var rows=CATS.map(function(c){return [c,ps[c],r[CATKEY[c]]]});
+  rows.push(['총점',ps.총점,r.total]);
+  rows.forEach(function(x){
+    var have=x[1],need=num(x[2]),has=String(x[2]).trim()!==''&&need>0;
+    var pct=has?Math.min(100,have/need*100):0,done=has&&have>=need;
+    var st=!has?'<span class="st na">기준 미입력</span>':done?'<span class="st ok">충족</span>':'<span class="st no">'+fmt(need-have)+'점 부족</span>';
+    h+='<div class="prog"><div class="lab"><b>'+x[0]+'</b><span>'+fmt(have)+(has?' / '+fmt(need):'')+'점 &nbsp;'+st+'</span></div><div class="bar"><i class="'+(done?'done':'')+'" style="width:'+pct+'%"></i></div></div>';
+  });
+  return h;
+}
+
+/* ---------- department lists ---------- */
+function listKey(){return cur.top+'.'+subKey()}
+function renderList(){
+  var d=dept(),sk=subKey(),sc=SCHEMAS[sk],k=listKey();
+  var label=d.tabs.filter(function(t){return t[0]===sk})[0][1];
+  var rows=(S.data[k]||[]);
+  var q=cur.q.trim().toLowerCase();
+  var shown=rows.filter(function(r){return !q||sc.fields.some(function(f){return String(r[f.k]||'').toLowerCase().indexOf(q)>=0})});
+  var h='';
+  if(sc.local)h+='<div class="note">학생 개인정보는 이 기기의 브라우저에만 저장되며 서버로 전송되지 않습니다. 공용 PC에서는 입력하지 마세요.</div>';
+  h+='<div class="row sp" style="margin-bottom:12px"><div><b style="font-size:16px">'+esc(label)+'</b> <span style="color:var(--muted);font-size:13px">'+rows.length+'건</span></div><button class="btn" data-a="add-rec">+ 추가</button></div>';
+  if(rows.length>3)h+='<input id="q" type="search" placeholder="검색" value="'+esc(cur.q)+'" style="margin-bottom:12px">';
+  if(!shown.length)h+='<div class="card empty">'+(rows.length?'검색 결과가 없습니다.':'아직 등록된 내용이 없습니다.<br>「+ 추가」로 입력하세요.')+'</div>';
+  else{
+    h+='<div class="grid">';
+    shown.forEach(function(r){
+      h+='<div class="item"><h3>'+esc(r[sc.fields[0].k])+'</h3><dl>';
+      sc.fields.slice(1).forEach(function(f){var v=r[f.k];if(v==null||String(v).trim()==='')return;
+        var vv=esc(v);if(f.k==='link'&&/^https?:\/\//i.test(String(v)))vv='<a href="'+esc(v)+'" target="_blank" rel="noopener noreferrer">열기</a>';
+        h+='<dt>'+esc(f.l)+'</dt><dd>'+vv+'</dd>'});
+      h+='</dl><div class="acts"><button class="btn ghost sm" data-a="edit-rec" data-id="'+r.id+'">수정</button></div></div>';
+    });
+    h+='</div>';
+  }
+  $('main').innerHTML=h;
+}
+
+/* ---------- dialog form ---------- */
+var ctx=null;
+function fieldHTML(f,v){
+  v=v==null?'':v;var req=f.req?' required':'';
+  var c;
+  if(f.t==='select')c='<select name="'+f.k+'"><option value="">선택</option>'+f.o.map(function(o){return '<option'+(o===v?' selected':'')+'>'+esc(o)+'</option>'}).join('')+'</select>';
+  else if(f.t==='textarea')c='<textarea name="'+f.k+'">'+esc(v)+'</textarea>';
+  else c='<input name="'+f.k+'" type="'+(f.t||'text')+'"'+(f.t==='number'?' step="any" inputmode="decimal"':'')+' value="'+esc(v)+'"'+req+'>';
+  return '<div class="f"><label>'+esc(f.l)+(f.req?' *':'')+'</label>'+c+'</div>';
+}
+var ACH_FIELDS=[
+  {k:'year',l:'연도',t:'number',req:1},
+  {k:'cat',l:'영역',t:'select',o:CATS},
+  {k:'title',l:'내용 (논문·작품·활동명 등)',req:1},
+  {k:'score',l:'점수',t:'number',req:1},
+  {k:'memo',l:'비고'}];
+function openForm(title,fields,rec,onSave,onDel){
+  ctx={fields:fields,rec:rec,onSave:onSave,onDel:onDel};
+  var h='<h2>'+esc(title)+'</h2>';
+  fields.forEach(function(f){h+=fieldHTML(f,rec?rec[f.k]:f.def)});
+  h+='<div class="row sp" style="margin-top:6px"><div>'+(rec?'<button type="button" class="btn del" data-a="del">삭제</button>':'')+'</div>'+
+     '<div class="row"><button type="button" class="btn ghost" data-a="cancel">취소</button><button class="btn" type="submit">저장</button></div></div>';
+  $('frm').innerHTML=h;
+  $('dlg').showModal();
+}
+$('frm').addEventListener('submit',function(e){
+  e.preventDefault();if(!ctx)return;
+  var o=ctx.rec?Object.assign({},ctx.rec):{id:uid()};
+  ctx.fields.forEach(function(f){var el=$('frm').elements[f.k];o[f.k]=el?el.value.trim():''});
+  if(ctx.fields===ACH_FIELDS&&!o.cat){alert('영역을 선택해 주세요.');return}
+  ctx.onSave(o);save();$('dlg').close();render();
+});
+$('frm').addEventListener('click',function(e){
+  var b=e.target.closest('[data-a]');if(!b)return;
+  if(b.dataset.a==='cancel')$('dlg').close();
+  if(b.dataset.a==='del'&&confirm('이 항목을 삭제할까요? 되돌릴 수 없습니다.')){ctx.onDel();save();$('dlg').close();render()}
+});
+
+$('main').addEventListener('click',function(e){
+  var b=e.target.closest('[data-a]');if(!b)return;
+  var a=b.dataset.a,id=b.dataset.id;
+  if(a==='add-ach'){
+    ACH_FIELDS[0].def=cur.yr||new Date().getFullYear();ACH_FIELDS[1].def='연구';
+    openForm('업적 추가',ACH_FIELDS,null,function(o){S.ach.push(o)});
+  }else if(a==='edit-ach'){
+    var r=S.ach.filter(function(x){return x.id===id})[0];if(!r)return;
+    openForm('업적 수정',ACH_FIELDS,r,function(o){S.ach[S.ach.indexOf(r)]=o},function(){S.ach.splice(S.ach.indexOf(r),1)});
+  }else if(a==='add-rec'||a==='edit-rec'){
+    var k=listKey(),sc=SCHEMAS[subKey()];S.data[k]=S.data[k]||[];var arr=S.data[k];
+    if(a==='add-rec')openForm(sc.name+' 추가',sc.fields,null,function(o){arr.push(o)});
+    else{var rc=arr.filter(function(x){return x.id===id})[0];if(!rc)return;
+      openForm(sc.name+' 수정',sc.fields,rc,function(o){arr[arr.indexOf(rc)]=o},function(){arr.splice(arr.indexOf(rc),1)})}
+  }
+});
+$('main').addEventListener('input',function(e){
+  var t=e.target;
+  if(t.dataset&&t.dataset.r){
+    S.req[t.dataset.r]=t.value;save();
+    var r=S.req;
+    var inR=S.ach.filter(function(a){var y=num(a.year);return (!r.from||y>=num(r.from))&&(!r.to||y<=num(r.to))});
+    $('prog').innerHTML=progHTML(sums(inR));
+  }else if(t.id==='q'){
+    cur.q=t.value;renderList();var q=$('q');if(q){q.focus();q.setSelectionRange(q.value.length,q.value.length)}
+  }
+});
+$('main').addEventListener('change',function(e){if(e.target.id==='yr'){cur.yr=e.target.value;renderAch()}});
+
+/* ---------- backup ---------- */
+$('exp').addEventListener('click',function(){
+  var blob=new Blob([JSON.stringify(S,null,2)],{type:'application/json'});
+  var a=document.createElement('a');a.href=URL.createObjectURL(blob);
+  a.download='유교수의-연구생활-백업-'+new Date().toISOString().slice(0,10)+'.json';
+  document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(a.href)},1000);
+});
+$('imp').addEventListener('click',function(){$('impf').click()});
+$('impf').addEventListener('change',function(e){
+  var f=e.target.files[0];if(!f)return;
+  var rd=new FileReader();
+  rd.onload=function(){
+    try{var o=JSON.parse(rd.result);if(!o||typeof o!=='object'||!Array.isArray(o.ach))throw 0;
+      if(!confirm('현재 내용을 백업 파일 내용으로 바꿉니다. 계속할까요?'))return;
+      var b=blank();S={ach:o.ach,req:Object.assign(b.req,o.req||{}),data:o.data||{}};save();render();
+    }catch(x){alert('백업 파일을 읽을 수 없습니다.')}
+    e.target.value='';
+  };
+  rd.readAsText(f);
+});
+
+render();
+})();
+</script>
+</body>
+</html>
